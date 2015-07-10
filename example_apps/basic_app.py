@@ -14,13 +14,10 @@ class ConfigClass(object):
     CSRF_ENABLED = True
 
     # Flask-Mail settings
-<<<<<<< HEAD
-    MAIL_USERNAME =           os.getenv('MAIL_USERNAME',        'oreoostory@gmail.com')
-=======
-    MAIL_USERNAME =           os.getenv('MAIL_USERNAME',        'email@example.com')
->>>>>>> 0b3d1889f172757bcd9df1076002ef012fb747f6
+
+    MAIL_USERNAME =           os.getenv('MAIL_USERNAME',        'oreostory@gmail.com')
     MAIL_PASSWORD =           os.getenv('MAIL_PASSWORD',        'password')
-    MAIL_DEFAULT_SENDER =     os.getenv('MAIL_DEFAULT_SENDER',  '"MyApp" <noreply@example.com>')
+    MAIL_DEFAULT_SENDER =     os.getenv('MAIL_DEFAULT_SENDER',  '"Oreo" <noreply@example.com>')
     MAIL_SERVER =             os.getenv('MAIL_SERVER',          'smtp.gmail.com')
     MAIL_PORT =           int(os.getenv('MAIL_PORT',            '465'))
     MAIL_USE_SSL =        int(os.getenv('MAIL_USE_SSL',         True))
@@ -31,7 +28,7 @@ class ConfigClass(object):
 
 def create_app():
     """ Flask application factory """
-    
+
     # Setup Flask app and app.config
     app = Flask(__name__)
     app.config.from_object(__name__+'.ConfigClass')
@@ -99,4 +96,3 @@ def create_app():
 if __name__=='__main__':
     app = create_app()
     app.run(host='0.0.0.0', port=5000, debug=True)
-
