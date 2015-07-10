@@ -50,7 +50,11 @@ Create roles_required_app.py
 Create ~/dev/example/roles_required_app.py with the content below.
 
 | Make sure to replace the following settings:
+<<<<<<< HEAD
 |     MAIL_USERNAME = 'oreoostory@gmail.com'
+=======
+|     MAIL_USERNAME = 'email@example.com'
+>>>>>>> 0b3d1889f172757bcd9df1076002ef012fb747f6
 |     MAIL_PASSWORD = 'password'
 |     MAIL_DEFAULT_SENDER = '"Sender" <noreply@example.com>'
 |     MAIL_SERVER   = 'smtp.gmail.com'

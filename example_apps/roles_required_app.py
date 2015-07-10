@@ -15,15 +15,24 @@ class ConfigClass(object):
     CSRF_ENABLED = True
 
     # Flask-Mail settings
+<<<<<<< HEAD
     MAIL_USERNAME =           os.getenv('MAIL_USERNAME',        'oreostory@gmail.com')
     MAIL_PASSWORD =           os.getenv('MAIL_PASSWORD',        'Wewillrockyou')
+=======
+    MAIL_USERNAME =           os.getenv('MAIL_USERNAME',        'email@example.com')
+    MAIL_PASSWORD =           os.getenv('MAIL_PASSWORD',        'password')
+>>>>>>> 0b3d1889f172757bcd9df1076002ef012fb747f6
     MAIL_DEFAULT_SENDER =     os.getenv('MAIL_DEFAULT_SENDER',  '"MyApp" <noreply@example.com>')
     MAIL_SERVER =             os.getenv('MAIL_SERVER',          'smtp.gmail.com')
     MAIL_PORT =           int(os.getenv('MAIL_PORT',            '465'))
     MAIL_USE_SSL =        int(os.getenv('MAIL_USE_SSL',         True))
 
     # Flask-User settings
+<<<<<<< HEAD
     USER_APP_NAME        = "Oreo Story"                # Used by email templates
+=======
+    USER_APP_NAME        = "AppName"                # Used by email templates
+>>>>>>> 0b3d1889f172757bcd9df1076002ef012fb747f6
 
 
 def create_app(test_config=None):                   # For automated tests

@@ -15,8 +15,13 @@ class ConfigClass(object):
     CSRF_ENABLED = True
 
     # Flask-Mail settings
+<<<<<<< HEAD
     MAIL_USERNAME =           os.getenv('MAIL_USERNAME',        'oreoostory@gmail.com')
     MAIL_PASSWORD =           os.getenv('MAIL_PASSWORD',        'Wewillrockyou')
+=======
+    MAIL_USERNAME =           os.getenv('MAIL_USERNAME',        'email@example.com')
+    MAIL_PASSWORD =           os.getenv('MAIL_PASSWORD',        'password')
+>>>>>>> 0b3d1889f172757bcd9df1076002ef012fb747f6
     MAIL_DEFAULT_SENDER =     os.getenv('MAIL_DEFAULT_SENDER',  '"MyApp" <noreply@example.com>')
     MAIL_SERVER =             os.getenv('MAIL_SERVER',          'smtp.gmail.com')
     MAIL_PORT =           int(os.getenv('MAIL_PORT',            '465'))
