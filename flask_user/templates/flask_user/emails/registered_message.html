@@ -1,7 +1,7 @@
 {% extends 'flask_user/emails/base_message.html' %}
 
 {% block message %}
-
+<h4>Greetings from Oreo Stories..</h4>
 <p>Thank you for registering with {{ app_name }}.</p>
 
 {% if user_manager.enable_confirm_email and not user.confirmed_at %}
